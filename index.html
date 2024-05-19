@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himno Nacional de Bolivia</title>
+    
+</head>
+<link rel="stylesheet" href="estilo.css">
+<body>
+    <div class="container">
+        <h1 id="titulo">HIMNO NACIONAL DE BOLIVIA</h1>
+        <div id="estrofas">
+          <div class="estrofa">
+              <p>I. Estrofa</p>
+              <p>Bolivianos: el hado propicio</p>
+              <p>coronó nuestros votos y anhelo</p>
+              <p>es ya libre, ya libre este suelo</p>
+              <p>ya cesó su servil condición.</p>
+            </div>
+            
+            <div class="estrofa">
+              <p>II. Estrofa</p>
+              <p>Al estruendo marcial que ayer fuera,</p>
+              <p>y al clamor de la guerra horroroso,</p>
+              <p>siguen hoy en contraste armonioso,</p>
+              <p>dulces himnos de paz y de unión.</p>
+            </div>
+            
+            <div class="estrofa">
+              <p>III. Estrofa</p>
+              <p>Coro: De la Patria, el alto nombre,</p>
+              <p>en glorioso esplendor conservemos</p>
+              <p>y en sus aras de nuevo juremos:</p>
+              <p>¡Morir antes que esclavos vivir!</p>
+            </div>
+            
+            <div class="estrofa">
+              <p>IV. Estrofa</p>
+              <p>Loor eterno a los bravos guerreros,</p>
+              <p>cuyo heroico valor y firmeza;</p>
+              <p>Conquistaron las glorias que empiezan,</p>
+              <p>hoy Bolivia feliz a gozar.</p>
+            </div>
+            <img id="imagen" src="https://media1.tenor.com/m/iV1QbI0RXcMAAAAd/ejercito-bolivia.gif" alt="Banderas de Bolivia">
+            <div class="estrofa">
+              <p>V. Estrofa</p>
+              <p>Que sus nombres el mármol y el bronce,</p>
+              <p>a remotas edades transmitan,</p>
+              <p>y en sonoros cantares repitan:</p>
+              <p>¡Libertad, libertad, libertad!</p>
+            </div>
+            
+            <div class="estrofa">
+              <p>VI. Estrofa</p>
+              <p>Coro: De la Patria, el alto nombre,</p>
+              <p>en glorioso esplendor conservemos</p>
+              <p>y en sus aras de nuevo juremos:</p>
+              <p>¡Morir antes que esclavos vivir!</p>
+            </div>
+            
+            <div class="estrofa">
+              <p>VII. Estrofa</p>
+              <p>Aquí alzo la justicia su trono</p>
+              <p>que la vil opresión desconoce;</p>
+              <p>Y en su timbre glorioso se goce;</p>
+              <p>¡Libertad, libertad, libertad!</p>
+            </div>
+            
+            <div class="estrofa">
+              <p>VIII. Estrofa</p>
+              <p>Esta tierra inocente y hermosa,</p>
+              <p>que ha debido a Bolívar su nombre,</p>
+              <p>es la patria feliz donde el hombre</p>
+              <p>goza el bien de la dicha y la paz.</p>
+            </div>
+            
+            <div class="estrofa">
+              <p>IX. Estrofa</p>
+              <p>Coro: De la patria, el alto nombre,</p>
+              <p>en glorioso esplendor conservemos y en sus aras de nuevo juremos:</p>
+              <p>¡Morir antes que esclavos vivir!</p>
+            </div>
+            
+            <div class="estrofa">
+              <p>X. Estrofa</p>
+              <p>Si extranjero poder algún día</p>
+              <p>sojuzgar a Bolivia intentare,</p>
+              <p>al destino fatal se prepare,</p>
+              <p>que amenaza a soberbio agresor.</p>
+            </div>
+            
+            <div class="estrofa">
+              <p>XI. Estrofa</p>
+              <p>Que los hijos del grande Bolívar,</p>
+              <p>han ya mil y mil veces jurado;</p>
+              <p>Morir antes que ver humillado,</p>
+              <p>de la patria el augusto perdón.</p>
+            </div>
+            
+            <div class="estrofa">
+              <p>XII. Estrofa</p>
+              <p>Coro: De la patria, el alto nombre,</p>
+              <p>en glorioso esplendor conservemos</p>
+              <p>y en sus aras de nuevo juremos:</p>
+              <p>¡Morir antes que esclavos vivir!</p>
+            </div>
+            
+        </div>
+        <img id="imagen" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgiaQUtQxdxHtwpwi8IafbrAyE_dj4VMloK3s0-EFORDvm6GXwWO1XxQ6iTe96Y88gQJp_7SVHmTolsfnUG-zfgg90VmNZxuTMn4hRRGIrmHJ-2NvNEaqb7AtLvYaZX35FaqsabK9DVHPM/s0/Flag_of_Bolivia.gif" alt="Banderas de Bolivia">
+      </div>
+      
+      <audio id="himno" src="Himno  Nacional de Bolivia.mp3"></audio>
+
+      <script>
+          const audio = document.getElementById('himno');
+          function reproducirAudio() {  
+              audio.play();
+              document.removeEventListener('click', reproducirAudio);
+          }
+          document.addEventListener('click', reproducirAudio);
+      </script>
+</body>
+</html>
