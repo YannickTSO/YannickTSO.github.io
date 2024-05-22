@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="card">
+        <!-- 1 -->
+        <div class="picture">
+            <img class="img-fluid" src="Mi imagen.jpg">
+        </div>
+        <!-- 2 -->
+        <div class="main-content">
+            <h3 class="name">Yannick</h3>
+            <span><i class="fab fa-instagram"></i> antopanda_th</span>
+            <h4 class="title">Estudiante de Ingenieria de Sistemas 👨‍💻</h4>
+            <h4 class="title">CI: 15354115</h4>
+            <h4 class="title">Nombre: John Anthony Condori Colquehuanca 👨</h4>
+        </div>
+        <!-- 3 -->
+        <ul class="social">
+            <li><a href="https://github.com/YannickTSO" class="fa fa-github"></a></li>
+            <li><a href="https://www.twitch.tv/yannick_yeremy" class="fab fa-twitch"></a></li> <!-- Cambiado a Facebook -->
+            <li><a href="https://www.instagram.com/antopanda_th/" class="fa fa-instagram"></a></li>
+            <li><a href="https://www.tiktok.com/@hc_anthony?_t=8mY4Zx7WwHm&_r=1" class="fab fa-tiktok"></a></li> <!-- Cambiado a TikTok -->
+        </ul>
+        <!-- 4 -->
+        <div class="skills">
+            <h6>HOBIES</h6> <!-- HOBIES corregido a HOBBIES -->
+            <ul>
+                <li>PINTAR 🎨</li>
+                <li>DIBUJAR ✏️</li>
+                <li>VIDEOJUEGOS 🎮</li>
+                <li>COMER 🍽️</li>
+                <li>DEPORTE ⚽</li>
+                <li>DORMIR 😴</li>
+                <li>COCINAR 🍳</li>
+                <li>MUSICA 🎵</li>
+                <li>REPRODUCE MI MUSICA FAVORITA PRECIONANDO AQUI🎵</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/dd8c49730d.js" crossorigin="anonymous"></script>
+    <audio id="musica" src="MusicaAB.mp3"></audio>
+
+      <script>
+          const audio = document.getElementById('musica');
+          function reproducirAudio() {  
+              audio.play();
+              document.removeEventListener('click', reproducirAudio);
+          }
+          document.addEventListener('click', reproducirAudio);
+      </script>
+      
+</body>
+
+</html>

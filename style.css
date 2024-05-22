@@ -1,0 +1,175 @@
+/* General styles */
+body {
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  height: 100vh;
+  background: #e0f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card styles */
+.card {
+  padding: 30px 0 55px;
+  margin-bottom: 30px;
+  background-color: #ffffff;
+  background-image: url('https://media1.tenor.com/m/1dViGS-haPIAAAAd/mobile-legends.gif'); /* Ruta de tu imagen */
+  background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 20px 20px 42px #d4e9f3, -20px -20px 42px #ffffff;
+  width: 20rem;
+  border-radius: 15px;
+  color: #d6e9ee; /* Cambio de color del texto a una tonalidad más clara */
+}
+
+.card:hover {
+  background-color: #f1f8e9;
+}
+
+/* Profile image section */
+.card .picture {
+  display: inline-block;
+  height: 130px;
+  width: 130px;
+  z-index: 1;
+  position: relative;
+  border-radius: 20%;
+}
+
+.card .picture::before {
+  content: "";
+  width: 100%;
+  height: 0;
+  border-radius: 50%;
+  background-color: #4a4e50;
+  position: absolute;
+  bottom: 135%;
+  right: 0;
+  left: 0;
+  opacity: 0.9;
+  transform: scale(3);
+  transition: all 0.3s linear 0s;
+}
+
+.card:hover .picture::before {
+  height: 100%;
+}
+
+.card .picture::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #c6eee7;
+  position: absolute;
+  top: 0;
+  left: 0%;
+  z-index: -1;
+}
+
+.card .picture img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: all 0.9s ease 0s;
+}
+
+.card:hover .picture img {
+  box-shadow: 0 0 0 14px #e8f5e9;
+  transform: scale(0.7);
+}
+
+/* Main content section */
+.card .main-content {
+  margin-bottom: -19px;
+}
+
+.card .main-content .title {
+  display: block;
+  font-size: 16px;
+  color: #dff0ed;
+  text-transform: capitalize;
+  margin: 5px 37px 0;
+  font-weight: bold;
+}
+
+.card .main-content .name {
+  padding: 0;
+  margin: 8px;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #4bf3df;
+}
+
+/* Social media section */
+.card .social {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #daf7f2;
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  transition: all 0.5s ease 0s;
+  border-radius: 0 0 15px 15px;
+}
+
+.card:hover .social {
+  bottom: 0;
+}
+
+.card .social li {
+  display: inline-block;
+}
+
+.card .social li a {
+  display: block;
+  padding: 10px;
+  font-size: 17px;
+  color: #c41616;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+.card .social li a:hover {
+  color: #394241;
+  background-color: #4a5657;
+}
+
+/* Skills section */
+.skills {
+  text-align: left;
+  padding: 15px;
+}
+
+.skills ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.skills ul li {
+  border: 1px solid #004d40;
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 14px;
+  margin: 0 7px 7px 0;
+  padding: 7px;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.skills ul li:hover {
+  background-color: #004d40;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+h6 {
+  margin: 10px;
+  text-align: center;
+  width: fit-content;
+}
